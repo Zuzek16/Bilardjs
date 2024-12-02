@@ -1,2 +1,3 @@
 # Bilardjs
-Js bilard table sandbox
+Js bilard table game/sandbox
+Using Two.js libary
