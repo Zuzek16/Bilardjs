@@ -1,3 +1,31 @@
+:root {
+    --light-text-color: #2f1d1a;
+    --light-background-accent: #56352d;
+    --light-background-accent-light: #816047;
+    --light-background-color: #b59062;
+    /*light- --accent-color-light: #d9c67f; */
+    --light-background-color: #d9c67f;
+    --light-accent-color: #1e723a;
+    --light-accent-color-darker: #12503f;
+    --light-accent-color-dark: #0f3746;
+
+    --text-color: #d9c67f;
+    --background-accent: #56352d;
+    --background-accent-light: #816047;
+    --background-color: #1f1310;
+    --accent-color: #1e723a;
+    --accent-color-darker: #12503f;
+    --accent-color-dark: #0f3746;
+}
+
+
+* {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
 
 
 h1 {
@@ -7,3 +35,24 @@ h1 {
 body {
     background-color: #1a4a1a;
 }
+
+@keyframes pulse {
+    from {font-size: 8px;}
+    to {font-size: 12px;}
+  }
+
+.fun p{
+    background-color: var(--accent-color-darker);
+    /* font-size: 12px; */
+    animation-name: pulse;
+    animation-duration: 4s;
+}
+/* .fun p{
+    animation-name: example;
+    animation-duration: 4s;
+  } */
+  
+  @keyframes example {
+  from {font-size: 8px;}
+      to {font-size: default;}
+  }
