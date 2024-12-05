@@ -1,3 +1,3 @@
 # Bilardjs
-Js bilard table game/sandbox
-Using Two.js/matter.js? libary
+Js bilard table using canvas
+Using Two.js libary
