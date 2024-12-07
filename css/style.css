@@ -24,18 +24,22 @@
 
 
 * {
+    font-size: 18px;
     color: var(--text-color);
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h1 {
     text-align: center;
+    font-size: 22px;
 }
-
-body {
-    background-color: #1a4a1a;
+body, html {
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
 }
 
 @keyframes pulse {
@@ -54,17 +58,21 @@ body {
   }
 
 div.fun {
-    height: 13px;
+    border-bottom: 1px solid var(--background-accent);
 }
 
 .fun p{
     display: inline-block;
-    height: 14px;
+    height: fit-content;
     width: fit-content;
     background-color: var(--accent-color-darker);
     font-size: 12px;
     animation-name: pulse;
     animation-duration: 4s;
+}
+
+div.story {
+    margin-bottom: 20px
 }
 
 p.appear {
@@ -76,9 +84,7 @@ p.appear {
 #canvas {
     width: fit-content;
     margin: auto;
-    float: none;
-    /* margin-left: 100px; */
-   
+    float: none;   
 }
 
 .left {
@@ -90,8 +96,42 @@ p.appear {
     float: right;
 }
 
+.center {
+    text-align: center;
+}
+
 .deco {
     background-color: var(--background-accent-light);
-    height: 100vh;
+    /* background-color: yellow; */
+    /* height: 100vh; */
+    min-height: 100vh;
+    height: 100%;
     width: 18%;
+    overflow-y: auto;
+}
+
+.img.arrow img{
+    width: 8%;
+    height: auto;
+}
+
+.doKnow {
+    display: none;
+}
+
+header {
+    padding-top: 10px;
+}
+
+#fishImg {
+    display: none;
+    visibility: hidden;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#fishImg * {
+    width: 100%;
 }
