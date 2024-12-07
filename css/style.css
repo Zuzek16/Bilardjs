@@ -19,7 +19,7 @@
 
     --anim-font-size: 8px;
     --anim-font-size2: 12px;
-
+    --side-bar-width: 18%;
 }
 
 
@@ -41,6 +41,7 @@ body, html {
     min-height: 100vh;
     height: fit-content;
 }
+
 
 @keyframes pulse {
     0% {font-size:var(--anim-font-size2);}
@@ -72,7 +73,7 @@ div.fun {
 }
 
 div.story {
-    margin-bottom: 20px
+    margin-bottom: 30px;
 }
 
 p.appear {
@@ -101,13 +102,11 @@ p.appear {
 }
 
 .deco {
-    background-color: var(--background-accent-light);
-    /* background-color: yellow; */
-    /* height: 100vh; */
+    background: rgb(129,96,71);
+background: linear-gradient(180deg, rgba(129,96,71,1) 0%, rgba(31,19,16,1) 100%);
     min-height: 100vh;
     height: 100%;
     width: 18%;
-    overflow-y: auto;
 }
 
 .img.arrow img{
@@ -134,4 +133,19 @@ header {
 
 #fishImg * {
     width: 100%;
+}
+
+
+.flex {
+    display: flex;
+    align-items: start;
+}
+
+.flex div.deco {
+    width: 18%;
+    height: 100%;
+}
+
+.flex div.mainCol {
+    width: calc(100% - var(--side-bar-width) - var(--side-bar-width));
 }

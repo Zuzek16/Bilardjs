@@ -23,17 +23,20 @@
         
     </header>
 
+    <div class="flex">
+
     <div class="left deco"></div>
+        
 
-
-    <div class="left">
+    <div class="mainCol">
 
     <div id="canvas">
     </div>
 
-    <div class="story center">
+    <div class="story center" id="story">
         <p>Looks like a table right!?</p>
-        <p>Just an canvas image for now... But I plan to rebuild something simmilar but with matter.js to make it a game!</p>
+        <p>Just an canvas image for now...</p>
+        <p>But I plan to rebuild something simmilar but with matter.js to make it a game!</p>
         <p>The table was built using Two.js!</p>
         <p>It really speeds up the works with canvas in JS.</p>
         <pre>
@@ -85,7 +88,6 @@
             </div>
             <button id="notFish" class="fishBtn" onclick="doKnow()">I do, actually</button>
             <div class="doKnow" id="doKnow">
-                <form action="#">
                     <label name="quiz" for="quiz">You're good, what is it then?</label>
 
                     <label for="cat">Cats</label>
@@ -94,14 +96,13 @@
                     <label for="dog">Dogs</label>
                     <input type="radio" name="quiz" id="dog" value="1">
 
-                    <label for="fish">Fish</label>
-                    <input type="radio" name="quiz" id="fish" value="2">
+                    <label for="fishr">Fish</label>
+                    <input type="radio" name="quiz" id="fishr" value="2">
 
                     <label for="bird">Birds</label>
                     <input type="radio" name="quiz" id="bird" value="3">
 
                     <button id="radio" onclick="validateAnwser()">Am I right?</button>
-                </form>
             </div>
             </div>
         </div>
@@ -109,6 +110,7 @@
 </div>
 
     <div class="right deco"></div>
+</div>
     <script type="module" src="script.js"></script>
 </body>
 </html>
