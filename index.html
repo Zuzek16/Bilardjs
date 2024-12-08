@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/two.js/0.8.14/two.js" integrity="sha512-Dhvr1lnrp+L/XLyLHgzg6Kk2qIcZTtkt2pCllZvu/fqG36mQj2NV5h5Wxg/qxOOA1zrw9gm344wbrrA05e0YEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Bilsrds and other things...</title>
+    <title>Bilards and other things...</title>
 </head>
 <body>
     <script src="func.js"></script>
@@ -88,9 +88,9 @@
             </div>
             <button id="notFish" class="fishBtn" onclick="doKnow()">I do, actually</button>
             <div class="doKnow" id="doKnow">
-                    <p>You're good, what is it then?</p>
+                    <p id="failedAnwser">You're good, what is it then?</p>
 
-                    <label for="cat">Cats</label>
+                    <label for="cat" value="0">Cats</label>
                     <input type="radio" name="quiz" id="cat" value="0">
 
                     <label for="dog">Dogs</label>
