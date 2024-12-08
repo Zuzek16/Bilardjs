@@ -4,7 +4,6 @@ let fails = 0;
 function validateAnwser() {
   const radioBtn = document.getElementsByName("quiz");
   let anwser = document.querySelector("input[type=radio]:checked").value;
-  
   switch (anwser) {
     case "0":
     case "1":
@@ -18,8 +17,6 @@ function validateAnwser() {
 }
 
 function wrongAnwser(anwser) {
-  console.log("ran wrongAnwser");
-  
   const el = document.querySelector("input[value=\'"+anwser+"\']");
   let id = el.id;
   const label = document.querySelector("label[for="+ id +"]")
@@ -51,28 +48,24 @@ function rightAnwser() {
   }
 
   document.getElementById("doKnow").remove();
-
   ran = false;
   dontKnow(false);
 }
 
-function dontKnow (alert = true) {
-  console.log("dont know");
-  
+function dontKnow (shouldAlert = true) {
   if (!ran) {
     ran = true;
     const fishPic = document.getElementById("fishImg");
     delBtn();
     fishPic.style.display = "flex";
     fishPic.style.visibility = "visible";
-    if (alert) {
+    if (shouldAlert) {
       alert("FISH! \n Look at their silly little eyes, and think of it. \n They just breathe air just like you, but they are submerged in water all their life. \n Crazy... \n and how do they see outside water?");
     }
     document.getElementById("story").append(document.createElement("p").innerText = "It doesn't get any betta than this");
   } else {
     return;
   }
- 
 }
 
 function doKnow () {
